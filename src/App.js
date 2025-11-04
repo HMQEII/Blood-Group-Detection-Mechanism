@@ -1,23 +1,19 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
+import Loader from './components/Loader';
+import Footer from './components/Footer';
+import BloodLoad from './components/BloodLoad';
 
 function App() {
   return (
     
     <div className="App">
       <header className="App-header">
-        <img src="./blood.png" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Blood Group Management System
-        </a>
+        {/* <img src="./blood.png" className="App-logo" alt="logo" /> */}
+        <BloodLoad/>
+        <h2 className="text-4xl font-bold text-white p-4">Blood Group Detection System</h2>
+        {/* <Loader/> */}
+        <Footer/>
       </header>
     </div>
   );
